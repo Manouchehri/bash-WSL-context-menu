@@ -10,7 +10,14 @@ If you installed WSL from the Microsoft Store use these files:
 If you were using the Ubuntu-Beta of WSL (no download from Microsoft Store) you might need this one:
 - Ubuntu Beta [bash.reg](https://github.com/Manouchehri/bash-WSL-context-menu/releases/download/v1/bash.reg)
 
-To install, download the reg-File for your distro from above. Accept the warnings and import it.
+To install:
+1. Open Registry Editor (Win+R, then type "regedit")
+2. Open "HKEY_CLASSES_ROOT\Directory\Background\shell\WSL"
+3. Then, RMB -> Permissions... -> Advanced -> Owner: ... Change -> Advanced -> Find Now. 
+4. Find your user, than click OK
+5. Change permission "Full Access" for Administrators group.
+6. Then, do it for "HKEY_CLASSES_ROOT\Directory\Background\shell\WSL\command"
+7. Download the reg-File for your distro from above. Accept the warnings and import it.
 
 
 
